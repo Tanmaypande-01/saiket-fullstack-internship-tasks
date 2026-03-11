@@ -1,0 +1,52 @@
+body{
+    font-family: Arial;
+}
+
+.hero{
+    padding:90px 0;
+    background:#f5f7fa;
+}
+
+.name{
+    color:#ff7a00;
+    font-weight:bold;
+}
+
+.profile-img{
+    width:280px;
+    border-radius:50%;
+    box-shadow:0 0 30px rgba(0,0,0,0.2);
+}
+
+.card:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+.card{
+    border-radius: 1rem !important;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    padding-top:0.7rem !important;
+
+}
+
+
+/* Dark Mode */
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .navbar{
+    background:#1f1f1f !important;
+}
+
+.dark .bg-light{
+    background:#1f1f1f !important;
+    color:white;
+}
