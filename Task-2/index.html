@@ -1,1 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ShopSmart — E-commerce Landing Page</title>
 
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!--NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#top">ShopSmart</a>
+
+        <!--menu button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          id="navToggle"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible menu -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#why-us">Why us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item mt-2 mt-lg-0 ms-lg-2">
+              <a class="btn btn-primary btn-sm w-100" href="#products">Shop now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="top" class="hero-section py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-6">
+            <p class="text-uppercase text-muted small mb-2">New arrivals</p>
+            <h1 class="display-5 fw-bold mb-3">Simple shopping. Smart choices.</h1>
+            <p class="lead text-muted mb-4">
+              A beginner-friendly e-commerce landing page made with HTML, CSS, and
+              Bootstrap. Fully responsive using the Bootstrap grid system.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#products" class="btn btn-primary btn-lg">Browse products</a>
+              <a href="#why-us" class="btn btn-outline-dark btn-lg">Learn more</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="hero-card p-4 p-md-5">
+              <h2 class="h5 fw-semibold mb-2">Today’s deal</h2>
+              <p class="text-muted mb-3">
+                Save up to <span class="fw-semibold">25%</span> on selected items.
+              </p>
+              <div class="hero-badges d-flex flex-wrap gap-2">
+                <span class="badge text-bg-light border">Fast shipping</span>
+                <span class="badge text-bg-light border">Secure checkout</span>
+                <span class="badge text-bg-light border">Easy returns</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--PRODUCTS SECTION -->
+    <main>
+      <section id="products" class="py-5">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-end justify-content-between gap-2 mb-4">
+            <div>
+              <h2 class="fw-bold mb-1">Featured Products</h2>
+              <p class="text-muted mb-0">Click “Add to Cart” to see a simple alert.</p>
+            </div>
+            <span class="text-muted small">Showing 6 items</span>
+          </div>
+
+          <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="./assets/headphone.jpeg"
+                  class="card-img-top"
+                  alt="Wireless Headphones"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5 card-title">Wireless Headphones</h3>
+                  <p class="card-text text-muted mb-3">
+                    Comfortable fit with great sound.
+                  </p>
+                  <div class="mt-auto d-flex align-items-center justify-content-between gap-2">
+                    <span class="price fw-bold"> <b>&#8377; 1499.00</b></span>
+                    <button
+                      class="btn btn-outline-primary btn-sm add-to-cart"
+                      type="button"
+                      data-product="Wireless Headphones"
+                      data-price="&#8377; 1499.00"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="./assets/smart watch.jpeg"
+                  class="card-img-top"
+                  alt="Smart Watch"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5 card-title">Smart Watch</h3>
+                  <p class="card-text text-muted mb-3">
+                    Track steps, sleep, and notifications.
+                  </p>
+                  <div class="mt-auto d-flex align-items-center justify-content-between gap-2">
+                    <span class="price fw-bold"><b>&#8377;999.00</b></span>
+                    <button
+                      class="btn btn-outline-primary btn-sm add-to-cart"
+                      type="button"
+                      data-product="Smart Watch"
+                      data-price="&#8377;999.00"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="./assets/bag.jpeg"
+                  class="card-img-top"
+                  alt="Backpack"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5 card-title">Travel Backpack</h3>
+                  <p class="card-text text-muted mb-3">
+                    Lightweight backpack with lots of space.
+                  </p>
+                  <div class="mt-auto d-flex align-items-center justify-content-between gap-2">
+                    <span class="price fw-bold"><b>&#8377; 1249.00</b></span>
+                    <button
+                      class="btn btn-outline-primary btn-sm add-to-cart"
+                      type="button"
+                      data-product="Travel Backpack"
+                      data-price="&#8377; 1249.00"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="./assets/running shose.jpeg"
+                  class="card-img-top"
+                  alt="Running Shoes"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5 card-title">Running Shoes</h3>
+                  <p class="card-text text-muted mb-3">
+                    Cushioned comfort for everyday runs.
+                  </p>
+                  <div class="mt-auto d-flex align-items-center justify-content-between gap-2">
+                    <span class="price fw-bold"><b>&#8377; 1999.00</b></span>
+                    <button
+                      class="btn btn-outline-primary btn-sm add-to-cart"
+                      type="button"
+                      data-product="Running Shoes"
+                      data-price="&#8377; 1999.00"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="./assets/coffee mug.jpeg"
+                  class="card-img-top"
+                  alt="Coffee Mug"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5 card-title">Ceramic Coffee Mug</h3>
+                  <p class="card-text text-muted mb-3">
+                    Minimal design, perfect for daily coffee.
+                  </p>
+                  <div class="mt-auto d-flex align-items-center justify-content-between gap-2">
+                    <span class="price fw-bold"><b>&#8377; 499.00</b></span>
+                    <button
+                      class="btn btn-outline-primary btn-sm add-to-cart"
+                      type="button"
+                      data-product="Ceramic Coffee Mug"
+                      data-price="&#8377; 499.00"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <img
+                  src="./assets/lamp.jpeg"
+                  class="card-img-top"
+                  alt="Desk Lamp"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5 card-title">LED Desk Lamp</h3>
+                  <p class="card-text text-muted mb-3">
+                    Bright, adjustable light for your workspace.
+                  </p>
+                  <div class="mt-auto d-flex align-items-center justify-content-between gap-2">
+                    <span class="price fw-bold"><b>&#8377; 1199.00</b></span>
+                    <button
+                      class="btn btn-outline-primary btn-sm add-to-cart"
+                      type="button"
+                      data-product="LED Desk Lamp"
+                      data-price="&#8377; 1199.00"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY US SECTION -->
+      <section id="why-us" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="fw-bold mb-4">Why shop with us?</h2>
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <div class="info-box h-100 p-4">
+                <h3 class="h5 fw-semibold">Secure Payment </h3>
+                <p class="text-muted mb-0">
+                  Your payment information is safe and protected.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="info-box h-100 p-4">
+                <h3 class="h5 fw-semibold">Easy Returns</h3>
+                <p class="text-muted mb-0">
+                  Hassle-free return policy for customer satisfaction.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="info-box h-100 p-4">
+                <h3 class="h5 fw-semibold">Fast Delivery </h3>
+                <p class="text-muted mb-0">
+                  We provide quick and reliable delivery for all products.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-12 col-lg-7">
+              <h2 class="fw-bold mb-2">Need help?</h2>
+              <p class="text-muted mb-0">
+                Email us at <a href="mailto:support@shopsmart.example">support@shopsmart.example</a>
+              </p>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div class="p-4 border rounded-3 bg-white shadow-sm">
+                <p class="fw-semibold mb-2">Quick tip</p>
+                <p class="text-muted mb-0">
+                  Open the page, resize your browser, and watch the product grid adapt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER -->
+    <footer class="py-4 bg-dark text-white-50">
+      <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-2">
+        <small>© <span id="year"></span> ShopSmart. Student project demo.</small>
+        <small>
+          Built with Bootstrap 5 •
+          <a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#top">Back to top</a>
+        </small>
+      </div>
+    </footer>
+
+    <!--JavaScript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
