@@ -1,0 +1,13 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+table td,
+table th {
+  vertical-align: middle;
+}
+
