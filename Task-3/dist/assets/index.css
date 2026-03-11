@@ -1,1 +1,160 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 16px;
+  background: linear-gradient(180deg, #f5f7ff, #fff 70%);
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  color: #111827;
+}
 
+.card {
+  width: 100%;
+  max-width: 640px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 25px #11182714;
+}
+
+.header {
+  margin-bottom: 16px;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.todoForm {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+.input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px #6366f126;
+}
+.button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.buttonSecondary {
+  background: #fff;
+  color: #111827;
+}
+.buttonDanger {
+  background: #ef4444;
+  border-color: #ef4444;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: #374151;
+}
+.todoList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.emptyState {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px dashed #d1d5db;
+  background: #fafafa;
+  color: #6b7280;
+  font-size: 14px;
+}
+.todoItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.left {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+.checkbox {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+}
+.text {
+  line-height: 1.4;
+  word-break: break-word;
+}
+.textCompleted {
+  color: #6b7280;
+  text-decoration: line-through;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+}
+.smallButton {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+}
+.smallButtonPrimary {
+  background: #4f46e5;
+  border-color: #4f46e5;
+  color: #fff;
+}
+.editRow {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
